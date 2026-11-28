@@ -19,5 +19,13 @@ for row in onglet1.values:
 for r in lignes:
     print(r)
 
+colonnes = []
+for column in onglet1.columns:
+    colonnes.append([cell.value for cell in column])
+
+#affichage des listes/colonnes
+for c in colonnes:
+    print(c)
+
 #ferme le fichier excel
 workbook.close()
